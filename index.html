@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Swisher: jQuery Demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" id="viewport-meta" >
+		<link type="text/css" rel="stylesheet" href="css/styles.css" />	
+		<link type="text/css" rel="stylesheet" href="https://work-samples.swishersolutions.com/css/styles.css" />	
+		<link type="text/css" rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+		
+	</head>	
+	
+	<body>
+	
+	<div id="main-container">
+	
+		<div class="top_user_navbar">
+			<button class="btn bt-default btn_image_sets" data-key="Heroes" >Show Heroes</button>
+			<button class="btn btn-default cast_vote">Cast Vote</button>
+			<a class="btn btn-default" href="https://work-samples.swishersolutions.com">Done</a>
+		</div>
+	
+		<div id="content_container">
+			
+			<div class="row">
+				
+				<div class="col-md-10">
+					<h4>Please drag and drop the images in the order you prefer, from Most Favorite to Least Favorite.</h4>
+					<ul>
+						<li>Please vote for both Image Sets ("Swisher" and "Heroes")</li>
+						<li>When you're done sorting a given image set, click Cast Vote (above) to cast your vote!</li>
+					</ul>
+				</div>
+				<div class="col-md-2" style="text-align:right;padding-top:5%">
+					<button class="btn btn-primary zoom" data-direction="minus">-</button>
+					<b>Zoom</b>					
+					<button class="btn btn-primary zoom" data-direction="plus">+</button>
+				</div>
+			</div>
+			
+			<div id="item_container" class="item_container"></div>	
+					
+		</div>
+		
+	</div>
+			
+	</body>
+	
+<div id="modal_success" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<span style="font-weight:bold;">Thanks!</span>
+			
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+				<p>Your preferences have been updated in the database, and the results on the main page will reflect your vote.</p>
+			</div>
+				
+		</div>
+
+	</div>
+</div>
+
+	
+</html>
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="lib/grid/jquery-sortable-photos.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
