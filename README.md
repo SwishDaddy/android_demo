@@ -15,7 +15,7 @@ This code posts to an API (*https://work-samples.swishersolutions.com/api/api.ph
 https://work-samples.swishersolutions.com/jquery
 
 ### Try it out
-If you want to download this code and get it up and running in your own environment, you'll need to look for the URLs that are hard-coded. Look for "https://wor-samples.swishersolutions.com" in the code, and replace it with your own sources, if you desire. Or you could just leave them and it'll all work out!
+If you want to download this code and get it up and running in your own environment, you'll need to look for the URLs that are hard-coded. Look for "https://work-samples.swishersolutions.com" in the code, and replace it with your own sources, if you desire. Or you could just leave them and it'll all work out!
 
 ### Contact
 Author: **Mike Swisher** *https://work-samples.swishersolutions.com*
