@@ -104,7 +104,7 @@ function getimages(imageset) {
 	
 };
 
-function drawgrid(griddata, imageset) {
+function drawgrid(griddata, imageset) {	
 	
 	let gridhtml = "";
 		
@@ -112,8 +112,11 @@ function drawgrid(griddata, imageset) {
 	
 	$.each(griddata, function(key, val) {
 		gridhtml += 
-		'<div class="photo-grid-item test ' + vw + '" data-filename="' + val + '">' +
-			'<img src="' + baseurl + '/api/img/' + val + '" />' +
+		'<div class="photo-grid-item ' + vw + '" data-filename="' + val + '">' +			
+			
+			'<img src="' + baseurl + '/api/img/' + val + '" /><br />' +
+			'<a class="btn btn-info fullscreen" href="' + baseurl + '/api/img/' + val + '" target="_blank">VIEW</a>' +
+				
 		'</div>';		
 	});	
 
@@ -121,10 +124,12 @@ function drawgrid(griddata, imageset) {
 		
 	$(".item_container").html(gridhtml);
 	
+	$(".fullscreen").hide();
+	
 	$('.photo-grid-container').sortablePhotos({
 		selector: '> *',
 		sortable: true,
-		padding: 10,
+		padding: 10,		
 		afterDrop: function (event, element) {								
 			$(".photo-grid-item").each(function(key, val) {				
 				var filename = $(this).data("filename");				
@@ -136,6 +141,10 @@ function drawgrid(griddata, imageset) {
 	$(".item_container").fadeIn(100, function() {
 		$(".btn_image_sets").prop("disabled", false);
 		$(".btn_image_sets").removeClass("waithand");
+		setTimeout(function(){ 
+			$(".fullscreen").fadeIn(250);
+		}, 500);
+		
 	});
 	
 };

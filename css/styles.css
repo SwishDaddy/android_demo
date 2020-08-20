@@ -19,6 +19,18 @@
 	width: 50vw;
 }
 
+
+.font2vw {
+	font-size: 2vw;
+}
+
+.fullscreen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
 .photo-grid-item img { 
 	width: 100%;
 	/* border: solid black 1px; */
