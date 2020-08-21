@@ -1,0 +1,53 @@
+{
+  "name": "swisher_rn_demo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.12.0",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-native-community/picker": "^1.6.6",
+    "@react-navigation/drawer": "^5.9.0",
+    "@react-navigation/native": "^5.7.3",
+    "@react-navigation/stack": "^5.9.0",
+    "accordion-collapse-react-native": "^0.3.2",
+    "react": "16.13.1",
+    "react-native": "0.63.2",
+    "react-native-draggable-flatlist": "^2.3.6",
+    "react-native-draggable-grid": "^2.1.2",
+    "react-native-elements": "^2.2.1",
+    "react-native-gesture-handler": "^1.7.0",
+    "react-native-google-recaptcha-v2": "^1.1.0",
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-loading-spinner-overlay": "^1.1.0",
+    "react-native-modal": "^11.5.6",
+    "react-native-reanimated": "^1.13.0",
+    "react-native-safe-area-context": "^3.1.6",
+    "react-native-screens": "^2.10.1",
+    "react-native-sortable-grid": "^2.0.0",
+    "react-native-sortable-gridview": "^1.1.5",
+    "react-native-sortable-list": "0.0.24",
+    "react-native-vector-icons": "^7.0.0",
+    "react-native-webview": "^10.7.0",
+    "react-navigation": "^4.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.11.1",
+    "@babel/runtime": "7.11.2",
+    "@react-native-community/eslint-config": "1.1.0",
+    "babel-jest": "25.5.1",
+    "eslint": "6.8.0",
+    "jest": "25.5.4",
+    "metro-react-native-babel-preset": "0.59.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
