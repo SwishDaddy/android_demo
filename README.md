@@ -1,6 +1,6 @@
 # Android (React Native) Coding Example
 
-## Using jQuery to Fetch and Display Data
+## Using React to Fetch and Display Data
 This project is intended to demonstrate some React Native chops.  :)
 
 ### Description
