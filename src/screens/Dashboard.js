@@ -26,12 +26,12 @@ class DashboardScreen extends Component {
 			data: [],
 			jsondata: null,
 			imageset: 'Swisher',
+			current_imageset: 'Heroes',
 			votecast: true,
 		};		
 	}
 	componentDidMount() {
-		this._mounted = true;
-		
+		this._mounted = true;		
 		this.toggleImageSet(true);
 		//this.getImages();
 		this.setState({
@@ -64,7 +64,7 @@ class DashboardScreen extends Component {
 		}
 		
 		let bodystr = 'json=' + JSON.stringify(postarr) +
-		'&rtype=' + this.state.imageset;
+		'&rtype=' + this.state.current_imageset;
 
 		fetch(Constants.APIs.MOBILE_API_URL, {
 			method: 'POST',
@@ -158,13 +158,15 @@ class DashboardScreen extends Component {
 		if (imageset == 'Heroes') {
 			this.setState({
 				imageset: 'Swisher',
-				btntext: 'Swisher'
+				btntext: 'Swisher',
+				current_imageset: 'Heroes',
 			})
 			this.getImages();
 		}else {
 			this.setState({
 				imageset: 'Heroes',
-				btntext: 'Heroes'
+				btntext: 'Heroes',
+				current_imageset: 'Swisher',
 			})
 			this.getImages();
 		}
